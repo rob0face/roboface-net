@@ -1,0 +1,40 @@
+.sticky-board {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+}
+.sticky-board.mobile {
+    gap: 0;
+}
+
+.sticky-note {
+    background-color: #fffa87;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    max-width: 400px;
+}
+.sticky-note h2.script-kr {
+    margin-top: 0;
+    font-size: 1.75em;
+    color: #444444;
+}
+.sticky-note h2.script-en {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #444444;
+}
+.sticky-note p.script-kr {
+    margin: 0;
+    font-size: 1.25em;
+    color: #444444;
+}
+.sticky-note p.script-en {
+    margin: 0;
+    font-size: 1em;
+    color: #444444;
+}

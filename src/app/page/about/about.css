@@ -1,0 +1,39 @@
+.socials {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border: 2px solid #99ff99;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 20px;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 10px;
+}
+.social {
+    padding: 0 20px;
+    border-radius: 50px;
+}
+.social.rob0face {
+    background-color: #407240;
+}
+.social.robofacenet {
+    background-color: #724072;
+}
+.social.gdave {
+    background-color: #333333;
+}
+.social a {
+    text-decoration-line: none;
+}
+.title {
+    font-weight: lighter;
+}

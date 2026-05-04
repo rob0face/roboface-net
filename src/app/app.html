@@ -1,0 +1,38 @@
+<header [class.mobile]="screen.currentScreenSize() == 'xs' || screen.currentScreenSize() == 'sm'">
+  @if (screen.currentScreenSize() != "xs") {
+    <div class="title parted-text-default">[●_○].net</div>
+    <div class="navbar">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">[홈]</a>
+      <a routerLink="/about" routerLinkActive="active">[소개]</a>
+      <a routerLink="/life" routerLinkActive="active">[근황]</a>
+      <a routerLink="/design" routerLinkActive="active">[디자인]</a>
+    </div>
+  } @else {
+    <div class="title mobile parted-text-default">[●_○]<br>.net</div>
+    <div class="navbar-icons">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <span class="material-symbols-outlined">home</span>
+      </a>
+      <a routerLink="/about" routerLinkActive="active">
+        <span class="material-symbols-outlined">account_box</span>
+      </a>
+      <a routerLink="/life" routerLinkActive="active">
+        <span class="material-symbols-outlined">event_note</span>
+      </a>
+      <a routerLink="/design" routerLinkActive="active">
+        <span class="material-symbols-outlined">palette</span>
+      </a>
+    </div>
+  }
+</header>
+
+<main>
+  <router-outlet />
+</main>
+
+<footer>
+  <p>
+    2026 (c) G. Dave Lee.<br />
+    All rights reserved. <a href="https://github.com/rob0face/roboface-net" target="_blank" rel="noopener">GitHub 리포지토리</a>
+  </p>
+</footer>

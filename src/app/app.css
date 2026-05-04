@@ -1,0 +1,70 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #407240;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header.mobile {
+    padding: 0 10px;
+}
+header .title {
+    color: white;
+    cursor: default;
+    font-size: 1.5rem;
+}
+header .title.mobile {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+header .title:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #407240;
+    /* This is indeed invisible! Underline color matches its background! But I'm going to add some cool animation here. */
+}
+header .navbar a {
+    margin: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    font: 300 1.75rem "Dongle", sans-serif;
+    color: white;
+}
+header .navbar-icons a {
+    margin: 0;
+    padding: 13px 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+header .navbar a:hover, header .navbar-icons a:hover {
+    cursor: pointer;
+    color: #333333;
+}
+header .navbar a.active, header .navbar-icons a.active {
+    background-color: white;
+    font-weight: 400;
+    color: black;
+}
+main {
+    flex: 1;
+    text-align: center;
+}
+footer p, footer p a {
+    height: 50px;
+    text-align: center;
+    font: 400 0.85rem "Lexend", sans-serif;
+    color: white;
+}
+footer p a:hover {
+    color: #99ff99;
+}

@@ -1,0 +1,10 @@
+<div class="sticky-board" [class.mobile]="screen.currentScreenSize() === 'xs'">
+    @for (note of notes; track $index) {
+        <div class="sticky-note">
+            <h2 class="script-kr">{{ note.heading }}</h2>
+            @for (line of note.content.split('+'); track $index) {
+                <p class="script-kr">{{ line }}</p>
+            }
+        </div>
+    }
+</div>
