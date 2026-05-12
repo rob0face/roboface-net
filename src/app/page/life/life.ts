@@ -51,7 +51,10 @@ export class Life implements AfterViewInit {
     },
     {
       heading: "2026-02-20",
-      content: "오랜만에 DDLC를 하다가 늦잠을 잤다+결말에 대해서 계속 생각하다가+잠에 들지 못했다보다+숨겨진 모니카 루트가 있다면 어땠을까?",
+      content: "오랜만에 DDLC를 하다가 늦잠을 잤다",
+    },{
+      heading: "2026-05-12",
+      content: "언제쯤 차를 살 수 있을까.",
     },
   ];
 }
