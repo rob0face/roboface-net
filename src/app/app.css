@@ -33,9 +33,9 @@ header .title:hover {
 }
 header .navbar a {
     margin: 0;
-    padding: 5px 10px;
+    padding: 13px;
     text-decoration: none;
-    font: 300 1.75rem "Dongle", sans-serif;
+    font: 500 1rem "IBM Plex Sans KR", sans-serif;
     color: white;
 }
 header .navbar-icons a {
@@ -52,7 +52,7 @@ header .navbar a:hover, header .navbar-icons a:hover {
 }
 header .navbar a.active, header .navbar-icons a.active {
     background-color: white;
-    font-weight: 400;
+    font-weight: 500;
     color: black;
 }
 main {

@@ -24,7 +24,7 @@ export class About {
     { site: 'GITHUB', url: 'https://github.com/rob0face', name: 'rob0face', aria: '로보페이스 깃허브로 가기' },
     { site: 'WEBSITE', url: 'https://roboface.net', name: 'roboface.net', aria: '로보페이스 웹사이트로 가기' },
     { site: 'BLUESKY', url: 'https://bsky.app/profile/roboface.net', name: 'roboface.net', aria: '로보페이스 블루스카이로 가기' },
-    { site: 'EMAIL', url: 'mailto:geonjungdave@outlook.com', name: 'gdave', aria: '이메일 보내기' }
+    { site: 'EMAIL', url: 'mailto:geonjungdave@outlook.com', name: 'geonjungdave', aria: '이메일 보내기' }
   ];
 
 }
