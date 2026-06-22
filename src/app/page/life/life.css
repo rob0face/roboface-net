@@ -5,7 +5,9 @@
     flex-wrap: wrap;
     gap: 0px;
     justify-content: center;
+    align-items: flex-start;
 }
+
 .sticky-board.mobile {
     gap: 0;
 }
@@ -18,23 +20,95 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
     max-width: 400px;
 }
+
+.sticky-note h2 {
+    margin: 0 0 3px 0;
+}
+
+.sticky-note p {
+    margin: 0;
+}
+
 .sticky-note h2.script-kr {
-    margin-top: 0;
     font-size: 1.75em;
     color: #444444;
 }
+
 .sticky-note h2.script-en {
-    margin-top: 0;
     font-size: 1.5em;
     color: #444444;
 }
+
 .sticky-note p.script-kr {
-    margin: 0;
     font-size: 1.25em;
     color: #444444;
 }
+
 .sticky-note p.script-en {
-    margin: 0;
     font-size: 1em;
     color: #444444;
+}
+
+.sticky-note button {
+    margin-top: 5px;
+    padding: 3px 8px;
+    background: transparent;
+    color: #444444;
+    border: 2px solid #444444;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sticky-note button:hover {
+    /*
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sticky-note button p.script-kr {
+    margin: 0;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.sticky-note button p.script-kr .material-symbols-outlined {
+    margin-right: 5px;
+}
+
+.jumpscare-sticker {
+    position: fixed;
+    top: 100vh;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(var(--rotation, 0deg));
+    height: 168px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.jumpscare-sticker.jump {
+    animation: jump-up-down 1s forwards;
+}
+
+@keyframes jump-up-down {
+    0% {
+        transform: translate(-50%, 0) rotate(var(--rotation, 0deg));
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        /* easeOutCubic (slowing down on way up) */
+    }
+
+    50% {
+        /* Jump peak: Center of the image is at 50vh (middle of screen height) */
+        transform: translate(-50%, calc(-50vh - 90px)) rotate(var(--rotation, 0deg));
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        /* easeInCubic (speeding up on way down) */
+    }
+
+    100% {
+        transform: translate(-50%, 0) rotate(var(--rotation, 0deg));
+    }
 }

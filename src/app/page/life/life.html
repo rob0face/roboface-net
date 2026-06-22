@@ -1,10 +1,22 @@
 <div class="sticky-board" [class.mobile]="screen.currentScreenSize() === 'xs'">
     @for (note of notes; track $index) {
-        <div class="sticky-note">
-            <h2 class="script-kr">{{ note.heading }}</h2>
-            @for (line of note.content.split('+'); track $index) {
-                <p class="script-kr">{{ line }}</p>
-            }
-        </div>
+    <div class="sticky-note">
+        <h2 class="script-kr">{{ note.heading }}</h2>
+        @for (line of note.content.split('+'); track $index) {
+        <p class="script-kr">{{ line }}</p>
+        }
+        @if (note.action) {
+        <button type="button" (click)="onAction(note.action)">
+            <p class="script-kr">
+                @if (note.action.icon) {
+                <span class="material-symbols-outlined">{{ note.action.icon }}</span>
+                }
+                {{ note.action.name }}
+            </p>
+        </button>
+        }
+    </div>
     }
 </div>
+
+<img src="/sticker_m.png" alt="Monika Jumpscare" class="jumpscare-sticker" [class.jump]="isJumping" [style.--rotation]="jumpscareRotation + 'deg'" />
