@@ -1,15 +1,27 @@
 <div class="spacer"></div>
-<div class="socials">
+<div class="paragraph-box green bottom">
     <div class="section">
-        <p class="body-kr">소셜 계정 모음 (클릭하면 이동해요.)</p>
+        <h1 class="header-light">소셜 계정 모음</h1>
     </div>
-    <div class="section">
-        @for (social of socials; track $index) {
+    <div class="section main-socials">
+        @for (social of main_socials; track $index) {
             <div class="social" class="{{ social.name.replace('.', '') }}">
                 <a href="{{ social.url }}" target="_blank" rel="noopener" title="{{ social.aria }}">
                     <p class="body-en">
-                        <span class="title">{{ social.site }}</span><br>
-                        {{ social.name }}
+                        <span class="title body-en">{{ social.site }}</span><br>
+                        <span class="name script-en">{{ social.name }}</span>
+                    </p>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="section less-socials">
+        @for (social of less_socials; track $index) {
+            <div class="social" class="{{ social.name.replace('.', '') }}">
+                <a href="{{ social.url }}" target="_blank" rel="noopener" title="{{ social.aria }}">
+                    <p class="body-en">
+                        <span class="title body-en">{{ social.site }}</span><br>
+                        <span class="name script-en">{{ social.name }}</span>
                     </p>
                 </a>
             </div>
@@ -17,7 +29,8 @@
     </div>
     <div class="section">
         <p class="body-kr">
-            주의: rob0face의 4번째 글자는 숫자 0(제로)입니다.
+            클릭하면 새 탭에서 열려요.<br>
+            주의: rob0face의 4번째 글자는 숫자 0(제로)예요.
         </p>
     </div>
 </div>
@@ -25,13 +38,19 @@
 <div class="paragraph-box green bottom">
     <h1 class="header-light">소개</h1>
     <p class="body-kr">
-        사실 훨씬 더 긴 소개가 있었는데, 너무 유치해서 삭제했어요.<br>
+        <span class="script-en">Prove I'm not a robot.</span><br>
+        <span class="script-kr">제가 로봇이 아니라고 생각하세요?</span><br>
         <br>
-        직업으로 개발자 일을 하고 있고, 구체적으로는<br>
-        작은 해상 물류 회사에서 데이터베이스 관리자(DBA) 겸 일반 IT 업무를 맡고 있어요.<br>
+        안녕하세요, 로보페이스예요.<br>
         <br>
-        취미로도 개발자 일을 하고 있고, 웹 개발에 관심이 많아요.<br>
-        "익조틱" 이라는 작은 인터넷 문화 그룹을 만들어 자유 형식의 웹 앱들을 개발하고 있는데, 아직은 비공개예요.<br>
+        직업은 개발자예요. 분야는 DBA예요. 취미로도 코딩을 하고 있고,<br>
+        영-한 번역과 웹 콘텐츠 제작도 하고 있어요.<br>
+        <br>
+        직장인이에요. 동시에,<br>
+        "익조틱"이라는 (아직은 비밀인) 작은 그룹을 만들어 웹 콘텐츠 제작 활동을 하고 있고,<br>
+        멘사 회원이기도 해요.<br>
+        <br>
+        저를 찾아주셔서 고마워요. 제 근황은 <a href="/life">여기</a>에서 확인할 수 있어요.<br>
     </p>
 </div>
 <div class="spacer"></div>
@@ -43,7 +62,7 @@
         닉네임과 문자열 둘 다, 프랑스 밴드 <strong>캐러밴 팰리스</strong>의 앨범 <a href="https://en.wikipedia.org/wiki/Robot_Face" target="_blank" rel="noopener"><em>로봇 페이스 </em></a>에서 따왔어요.<br />
         제가 고등학생일 때부터 이 앨범과 밴드를 좋아하고 있거든요.<br>
         <br>
-        다만 소셜 미디어에서 @roboface 라는 아이디를 사용하는 분들은 제가 아니니 오해하지 말아주세요!<br>
+        다만 소셜 미디어에서 @roboface 라는 아이디를 사용하는 분들은 제가 아니에요.<br>
         저는 f 앞의 o가 숫자 0(제로)인 <span class="body-en">@rob0face</span>를 사용하거나<br>
         뒤에 .net을 붙여 <span class="body-en">@roboface.net</span>을 사용하고 있어요.<br>
     </p>

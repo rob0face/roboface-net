@@ -1,6 +1,5 @@
 .socials {
     padding: 20px;
-    border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 20px;
     border: 2px solid #99ff99;
@@ -18,10 +17,34 @@
     margin: 0 auto;
     gap: 10px;
 }
-.social {
-    padding: 0 20px;
-    border-radius: 50px;
+
+
+.main-socials .social {
+    padding: 10px 20px;
 }
+.main-socials .social a,
+.main-socials .social p {
+    text-decoration-line: none;
+    margin: 0;
+    line-height: 1.15rem;
+}
+.less-socials {
+    margin-top: 10px;
+}
+.less-socials .social {
+    padding: 5px 10px;
+}
+.less-socials .social a,
+.less-socials .social p {
+    text-decoration-line: none;
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+.name {
+    font-weight: lighter;
+}
+/*
 .social.rob0face {
     background-color: #407240;
 }
@@ -31,9 +54,10 @@
 .social.geonjungdave {
     background-color: #333333;
 }
-.social a {
-    text-decoration-line: none;
+*/
+.main-socials .social {
+    background-color: #407240;
 }
-.title {
-    font-weight: lighter;
+.less-socials .social {
+    background-color: #333333;
 }
